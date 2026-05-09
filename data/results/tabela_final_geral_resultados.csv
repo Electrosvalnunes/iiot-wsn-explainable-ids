@@ -1,0 +1,9 @@
+Dataset,Task,Model,Main_Metric,Value,Secondary_Result,Interpretation
+OMNeT++/INET,Multiclass attack classification,Random Forest,Leave-one-topology-out accuracy,0.9999,STD = 0.0002; 20% noise accuracy = 0.9683,Best topology-independent generalization
+OMNeT++/INET,Multiclass attack classification,XGBoost adjusted,Leave-one-topology-out accuracy,0.9833,STD = 0.0261; 20% noise accuracy = 0.9822,Strong robustness under noisy measurements
+OMNeT++/INET,Multiclass attack classification,Bayesian Network 3 bins,80/20 split accuracy,0.9405,Interpretable probabilistic baseline,"Good interpretability, moderate predictive performance"
+OMNeT++/INET,Multiclass attack classification,Bayesian Network 5 bins,Leave-one-topology-out accuracy,0.9193,80/20 accuracy = 1.0000; STD = 0.1424,Highly interpretable but sensitive to topology shifts
+Trust-Aware IIoT,Multiclass attack classification,Random Forest,Accuracy,0.6923,Mostly predicted the majority Normal class,Not suitable for multiclass attack discrimination
+Trust-Aware IIoT,Multiclass attack classification,XGBoost,Accuracy,0.2399,Low class separability,Poor multiclass performance
+Trust-Aware IIoT,Binary anomaly detection,Random Forest,Recall class 1,0.0221,Accuracy = 0.8376; Balanced accuracy = 0.5046,Accuracy inflated by class imbalance
+Trust-Aware IIoT,Binary anomaly detection,XGBoost threshold 0.40,Recall class 1,0.9926,Balanced accuracy = 0.7876; F1 class 1 = 0.4651,Best external anomaly detection behavior

@@ -1,0 +1,5 @@
+Target,Model,Accuracy
+Attack_Class,Random Forest,0.6923076923076923
+Attack_Class,XGBoost,0.23988603988603988
+Label,Random Forest,0.8444444444444444
+Label,XGBoost,0.6643874643874644
