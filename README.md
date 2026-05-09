@@ -27,6 +27,16 @@ This repository contains datasets, scripts, figures, and reproducibility materia
 - SHAP explainability
 - External validation with Trust-Aware IIoT
 
+##  Requirements
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- xgboost
+- shap
+- pgmpy
+- seaborn
+
 ## How to reproduce
 
 ```bash
@@ -36,3 +46,8 @@ python scripts/02_analise_exploratoria.py
 python scripts/04_random_forest_model.py
 python scripts/08_xgboost_model.py
 python scripts/15_rede_bayesiana_5bins.py
+
+
+
+
+
